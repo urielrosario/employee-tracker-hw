@@ -1,0 +1,26 @@
+{
+  "name": "employee-tracker-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urielrosario/employee-tracker-hw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urielrosario/employee-tracker-hw/issues"
+  },
+  "homepage": "https://github.com/urielrosario/employee-tracker-hw#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "init": "^0.1.2",
+    "inquirer": "^8.0.0",
+    "mysql": "^2.18.1"
+  }
+}
