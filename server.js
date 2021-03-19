@@ -172,7 +172,7 @@ const addDepartment = () => {
     .then((answers) => {
       connection.query(
         "INSERT INTO department (name) VALUES (?)",
-        answers.department,
+        [answers.addDepartment],
         (err) => {
           if (err) throw err;
           startPrompt();
@@ -225,7 +225,7 @@ const removeEmployee = () => {
         ),
       })
       .then((answers) => {
-        let employeeLeft = answer.deleteEmployee.split(" ")[1];
+        let employeeLeft = answers.deleteEmployee.split(" ")[1];
         connection.query(
           `DELETE employee FROM employee WHERE last_name = '${employeeLeft}'`,
           (err) => {
@@ -247,7 +247,7 @@ const removeDepartment = () => {
         choices: department.map((dep) => `${dep.name}`),
       })
       .then((answers) => {
-        let departmentLeft = answe.removeDepartment;
+        let departmentLeft = answers.removeDepartment;
         console.log(departmentLeft);
         connection.query(
           `DELETE FROM department WHERE name = '${departmentLeft}'`,

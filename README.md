@@ -24,10 +24,6 @@
 - https://www.npmjs.com/package/console.table
 - Bootcamp assignments
 
-## Screenshot
-
-![screenshot]()
-
 ## WalkThrough
 
-![walkthrough]()
+![walkthrough](assets/walkthrough.gif)
